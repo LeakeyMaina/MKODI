@@ -3,7 +3,6 @@ import asyncio
 
 
 async def other_task():
-    print("Running other tasks...")
     for i in range(10):
         print(f"Running other tasks...{i}")
         await asyncio.sleep(0.25)
@@ -20,9 +19,7 @@ async def main():
 
     response = await task1
 
-    print(f'\nRECEIVED RESPONSE {response}')
-    print(f'\nACCESS TOKEN = {response["access_token"]}')
-    print(f'EXPIRES IN = {response["expires_in"]}\n')
+    print(f'\nRECEIVED MPESA API RESPONSE... {response}\n')
 
     print(f'\n{await task2}\n')
 

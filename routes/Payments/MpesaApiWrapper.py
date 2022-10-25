@@ -2,6 +2,7 @@
 import requests
 import asyncio
 from enum import Enum
+from Tools import currentFuncName
 
 
 class MpesaEndPoints(Enum):
@@ -24,11 +25,30 @@ class MpesaApiWrapper:
         self.__base_url = base_url
         self.__request_headers = headers
 
-    async def get_access_token(self):
-        print("Called MPESA API...get_access_token")
-        auth_url = self.__base_url + MpesaEndPoints.get_access_token.value
-        response = requests.request(
-            "GET", auth_url, headers=self.__request_headers)
-        await asyncio.sleep(1)
+    # async def get_access_token(self):
+    #     funcName = "MpesaApiWrapper.get_access_token"
+    #     print(f'\n Called MPESA API...{funcName} \n')
+    #     request_url = self.__base_url + MpesaEndPoints.get_access_token.value
+    #     response = requests.request(
+    #         "GET", request_url, headers=self.__request_headers)
+    #     # await asyncio.sleep(1)
+    #     return response.json()
 
+    async def get_access_token(self):
+        funcName = "MpesaApiWrapper.get_access_token"
+        print(f'\n Called MPESA API...{funcName} \n')
+        request_url = self.__base_url + MpesaEndPoints.get_access_token.value
+        response = await MpesaApiWrapper.call_api(request_url, self.__request_headers)
+        return response
+
+    async def b2b_payment_request(self):
+        funcName = "MpesaApiWrapper.b2b_payment_request"
+        print(f'\n Called MPESA API...{funcName} \n')
+        request_url = self.__base_url + MpesaEndPoints.b2b_payment_request.value
+        response = await MpesaApiWrapper.call_api(request_url, self.__request_headers)
+        return response
+
+    async def call_api(request_url, request_headers):
+        response = requests.request(
+            "GET", request_url, headers=request_headers)
         return response.json()
