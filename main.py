@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes import landlords, properties, tenants
+from PropertyManagement.routes import landlords, properties, tenants
 
 app = FastAPI()
 

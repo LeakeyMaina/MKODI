@@ -25,15 +25,6 @@ class MpesaApiWrapper:
         self.__base_url = base_url
         self.__request_headers = headers
 
-    # async def get_access_token(self):
-    #     funcName = "MpesaApiWrapper.get_access_token"
-    #     print(f'\n Called MPESA API...{funcName} \n')
-    #     request_url = self.__base_url + MpesaEndPoints.get_access_token.value
-    #     response = requests.request(
-    #         "GET", request_url, headers=self.__request_headers)
-    #     # await asyncio.sleep(1)
-    #     return response.json()
-
     async def get_access_token(self):
         funcName = "MpesaApiWrapper.get_access_token"
         print(f'\n Called MPESA API...{funcName} \n')
