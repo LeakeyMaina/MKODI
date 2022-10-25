@@ -1,6 +1,8 @@
 from fastapi import FastAPI
+from routes import landlords, properties, tenants
 
-app= FastAPI()
+app = FastAPI()
 
-@app.get("/")
-def
+app.include_router(landlords.router)
+app.include_router(properties.router)
+app.include_router(tenants.router)
