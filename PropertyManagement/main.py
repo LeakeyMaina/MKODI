@@ -10,4 +10,4 @@ app.include_router(tenants.router)
 
 @app.get("/")
 def root():
-    return "Hello, Welcome to MKODI"
+    return "Hello, Welcome to the MKODI Property Management API"
