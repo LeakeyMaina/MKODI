@@ -1,8 +1,13 @@
 from fastapi import FastAPI
-from PropertyManagement.routes import landlords, properties, tenants
+from Routes import landlords, properties, tenants
 
 app = FastAPI()
 
 app.include_router(landlords.router)
 app.include_router(properties.router)
 app.include_router(tenants.router)
+
+
+@app.get("/")
+def root():
+    return "Hello, Welcome to MKODI"

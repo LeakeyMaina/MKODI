@@ -17,7 +17,7 @@ This module is used to automate rent invoices and overdue payment reminders.The 
     Invoices
     Payments
 
-3. Taxation module
+3. Tax management module
 This maintains a landlord's financial and accounting records for their properties and The rental income and expenses records enables  landlord to comply with the Kenya Revenue Authority monthly Income tax filing requirements
 
 4. Tenancy Ratings module

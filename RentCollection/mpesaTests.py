@@ -1,5 +1,7 @@
-from MpesaApiWrapper import MpesaApiWrapper
+
 import asyncio
+from MpesaApiWrapper import MpesaApiWrapper
+#from ..Tools.tools import read_environment_variable
 
 
 async def other_task():
@@ -22,5 +24,7 @@ async def main():
     print(f'\nRECEIVED MPESA API RESPONSE... {response}\n')
 
     print(f'\n{await task2}\n')
+
+   # print(read_environment_variable("PATH"))
 
 asyncio.run(main())
