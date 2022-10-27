@@ -93,6 +93,7 @@ class MpesaApiWrapper:
         response = await self.call_api(request_url)
         return response
 
+    # Body = mpesa_apis_dtos.mpesa_register_url)
     async def register_c2b_confirmation_urls(self):
         funcName = "MpesaApiWrapper.register_c2b_confirmation_urls"
         print(f'\n Called MPESA API...{funcName} \n')
