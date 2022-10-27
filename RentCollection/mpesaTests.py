@@ -14,12 +14,12 @@ async def other_task():
 async def main():
     mpesa_wrapper = MpesaApiWrapper()
 
-    # response = await asyncio.create_task(mpesa_wrapper.get_access_token())
-    print(f'\n {(await asyncio.create_task(mpesa_wrapper.get_access_token()))}\n')
-    print(f'\n {(await asyncio.create_task(other_task()))}\n')
+    access_token_response = asyncio.create_task(
+        mpesa_wrapper.get_access_token())
 
-# print(f'\n{await task2}\n')
+    other_task_response = asyncio.create_task(other_task())
 
-# print(read_environment_variable("PATH"))
+    print(f'\nRECEIVED MPESA API RESPONSE... {await access_token_response}\n')
+    print(f'\n{await other_task_response}\n')
 
 asyncio.run(main())
