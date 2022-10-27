@@ -1,5 +1,6 @@
 
 import requests
+import asyncio
 from MpesaEndPoints import MpesaEndPoints
 
 
@@ -10,6 +11,7 @@ class MpesaApiWrapper:
         self.__request_headers = headers
 
     async def call_api(self, request_url):
+        await asyncio.sleep(10)
         response = requests.request(
             "GET", request_url, headers=self.__request_headers)
         return response.json()
