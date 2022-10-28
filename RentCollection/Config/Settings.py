@@ -1,5 +1,6 @@
 from pydantic import BaseSettings, HttpUrl
-from ..DTOs.mpesa_apis_dtos import default_action
+from RentCollection.DTOs.mpesa_apis_dtos import default_action
+#import RentCollection.DTOs.mpesa_apis_dtos
 
 
 class Settings(BaseSettings):
