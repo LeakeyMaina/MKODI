@@ -1,6 +1,6 @@
 from pydantic import BaseSettings, HttpUrl
 
-from ..Routes.mpesa_end_points import default_action
+from Models.mpesa_dtos import default_action
 
 
 class Settings(BaseSettings):
