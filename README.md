@@ -1,10 +1,6 @@
 # MKODI
 
-MKODI is a cloud based rental property management system that enables Landlords to manage their rental properties, receive digital rental payments from their tenants and comply with the Kenya Revenue Authority monthly Income tax remitance requirements.
-
-The system automatically issues rental invoices for due rent and sends receipts for payments received from tenants.It integrates with mobile payment providers and other financial instituitions to enable the landlord to receive digital rental payments from their tenants.
-
-It maintains a landlord's financial and accounting records for their properties and enables them to to file and remit their monthly rental income tax to the Kenya Revenue Authority.  
+MKODI is a cloud based rental property management system that enables Landlords to manage their rental properties, receive digital rental payments from their tenants and comply with the Kenya Revenue Authority Monthly Rental Income Tax remitance requirements.
 
 The system is composed of the following modules
 
@@ -15,13 +11,11 @@ This module is used to register and manage new landlords and their respective pr
     Tenant Records
 
 2. Rent collection management Module
-This module is used to automate rent invoices and overdue payment reminders.The system automatically issues rental invoices when due and sends receipts for payments received from tenants.It integrates with mobile payment providers and banks to enable the landlord to receive digital rental payments from their tenants.
-    Rental Invoices
-    Rental Payments
+This module integrates with MPESA and enables the landlord to receive mpesa rental payments from their tenants. It maintains a tenant's rental payment records and automates overdue payment reminders as well as receipts for payments received.
     Rental Payments Records
 
 3. Rental Income Tax management module
-This maintains a landlord's financial and accounting records for their properties and The rental income and expenses records enables  landlord to comply with the Kenya Revenue Authority monthly Income tax filing requirements
+This module maintains a landlord's financial and accounting records for their properties and  enables a landlord to comply with the Kenya Revenue Authority Monthly Rental Income Tax filing requirements <https://www.youtube.com/watch?v=y1hxJFS2Nk0&t=68s>
     Rental Tax Records
     Rental Tax calculator
     Rental Tax Transmitter

@@ -12,8 +12,8 @@ class default_action(Enum):
     Canceled = "Canceled"
 
 
-class mpesa_register_url(BaseSettings):
-    "ShortCode": str
+class register_c2b_confirmation_urls(BaseSettings):
+    "ShortCode": 123456
     "ResponseType": default_action
     "ConfirmationURL": HttpUrl
     "ValidationURL": HttpUrl

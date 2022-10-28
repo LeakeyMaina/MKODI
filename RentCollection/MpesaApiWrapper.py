@@ -7,6 +7,8 @@ from MpesaEndPoints import MpesaEndPoints
 class MpesaApiWrapper:
     def __init__(self, base_url=MpesaEndPoints.base_url.value, headers={
             'Authorization': 'Basic amJDTnBmakZ5UHdqVWRmWHpCNThGQW9CN3VMUkdDQnM6S2FIRUhlaTM3WUtXS2RDbA=='}):
+        funcName = "MpesaApiWrapper.__init__"
+        print(f'\n Called MPESA API...{funcName} \n')
         self.__base_url = base_url
         self.__request_headers = headers
 
@@ -73,16 +75,10 @@ class MpesaApiWrapper:
         return response
 
     async def initiate_lipanampesa_online_payment(self):
-        funcName = "MpesaApiWrapper.b2c_payment_request"
+        funcName = "MpesaApiWrapper.initiate_lipanampesa_online_payment"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.b2c_payment_request.value
-        response = await self.call_api(request_url)
-        return response
-
-    async def initiate_lipanampesa_online_payment(self):
-        funcName = "MpesaApiWrapper.b2c_payment_request"
-        print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.b2c_payment_request.value
+        request_url = self.__base_url + \
+            MpesaEndPoints.initiate_lipanampesa_online_payment.value
         response = await self.call_api(request_url)
         return response
 
@@ -93,7 +89,7 @@ class MpesaApiWrapper:
         response = await self.call_api(request_url)
         return response
 
-    # Body = mpesa_apis_dtos.mpesa_register_url)
+    # Body = mpesa_apis_dtos.register_c2b_confirmation_urls)
     async def register_c2b_confirmation_urls(self):
         funcName = "MpesaApiWrapper.register_c2b_confirmation_urls"
         print(f'\n Called MPESA API...{funcName} \n')
