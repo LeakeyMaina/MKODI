@@ -11,7 +11,7 @@ This module is used to register and manage new landlords and their respective pr
     Tenant Records
 
 2. Rent collection management Module
-This module integrates with  (<https://developer.safaricom.co.ke/>) and enables the landlord to receive mpesa rental payments from their tenants. It maintains a tenant's rental payment records and automates overdue payment reminders as well as receipts for payments received.
+This module integrates with  MPESA <https://developer.safaricom.co.ke/> and enables the landlord to receive mpesa rental payments from their tenants. It maintains a tenant's rental payment records and automates overdue payment reminders as well as receipts for payments received.
     Rental Payments Records
 
 3. Rental Income Tax management module
