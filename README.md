@@ -15,7 +15,7 @@ This module integrates with MPESA and enables the landlord to receive mpesa rent
     Rental Payments Records
 
 3. Rental Income Tax management module
-This module maintains a landlord's financial and accounting records for their properties and  enables a landlord to comply with the Kenya Revenue Authority Monthly Rental Income Tax filing requirements <https://www.youtube.com/watch?v=y1hxJFS2Nk0&t=68s>
+This module maintains a landlord's financial and accounting records for their properties and  enables a landlord to comply with the Kenya Revenue Authority Monthly Rental Income Tax filing requirements <https://www.kra.go.ke/individual/filing-paying/types-of-taxes/residential-rental-income>
     Rental Tax Records
     Rental Tax calculator
     Rental Tax Transmitter

@@ -2,7 +2,7 @@
 import requests
 import asyncio
 
-from . import mpesa_end_points
+from Models import mpesa_end_points
 
 
 class MpesaApiWrapper:

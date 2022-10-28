@@ -1,6 +1,6 @@
 import asyncio
 # import MpesaApiWrapper from Routes
-from Routes import MpesaApiWrapper
+from Routes.mpesa_api_wrapper import MpesaApiWrapper
 
 
 async def other_task():
