@@ -12,8 +12,8 @@ class default_action(Enum):
     Canceled = "Canceled"
 
 
-class register_c2b_confirmation_urls(BaseSettings):
-    "ShortCode": 123456
-    "ResponseType": default_action
-    "ConfirmationURL": HttpUrl
-    "ValidationURL": HttpUrl
+class dto_register_c2b_confirmation_urls(BaseSettings):
+    short_code: str
+    response_type: default_action
+    confirmation_url: HttpUrl
+    validation_url: HttpUrl

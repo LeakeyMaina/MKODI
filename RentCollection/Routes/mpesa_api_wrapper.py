@@ -1,11 +1,12 @@
 
 import requests
 import asyncio
-from MpesaEndPoints import MpesaEndPoints
+
+from . import mpesa_end_points
 
 
 class MpesaApiWrapper:
-    def __init__(self, base_url=MpesaEndPoints.base_url.value, headers={
+    def __init__(self, base_url=mpesa_end_points.base_url, headers={
             'Authorization': 'Basic amJDTnBmakZ5UHdqVWRmWHpCNThGQW9CN3VMUkdDQnM6S2FIRUhlaTM3WUtXS2RDbA=='}):
         funcName = "MpesaApiWrapper.__init__"
         print(f'\n Called MPESA API...{funcName} \n')
@@ -21,56 +22,57 @@ class MpesaApiWrapper:
     async def get_access_token(self):
         funcName = "MpesaApiWrapper.get_access_token"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.get_access_token.value
+        request_url = self.__base_url + mpesa_end_points.get_access_token.value
         response = await self.call_api(request_url)
         return response
 
     async def b2b_payment_request(self):
         funcName = "MpesaApiWrapper.b2b_payment_request"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.b2b_payment_request.value
+        request_url = self.__base_url + mpesa_end_points.b2b_payment_request.value
         response = await self.call_api(request_url)
         return response
 
     async def reverse_transaction(self):
         funcName = "MpesaApiWrapper.reverse_transaction"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.reverse_transaction.value
+        request_url = self.__base_url + mpesa_end_points.reverse_transaction.value
         response = await self.call_api(request_url)
         return response
 
     async def query_transaction(self):
         funcName = "MpesaApiWrapper.query_transaction"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.query_transaction.value
+        request_url = self.__base_url + mpesa_end_points.query_transaction.value
         response = await self.call_api(request_url)
         return response
 
     async def b2b_payment_request(self):
         funcName = "MpesaApiWrapper.b2b_payment_request"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.b2b_payment_request.value
+        request_url = self.__base_url + mpesa_end_points.b2b_payment_request.value
         response = await self.call_api(request_url)
         return response
 
     async def simulate_c2b_payment(self):
         funcName = "MpesaApiWrapper.simulate_c2b_payment"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.simulate_c2b_payment.value
+        request_url = self.__base_url + mpesa_end_points.simulate_c2b_payment.value
         response = await self.call_api(request_url)
         return response
 
     async def query_lipanampesa_online_payment(self):
         funcName = "MpesaApiWrapper.query_lipanampesa_online_payment"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.query_lipanampesa_online_payment.value
+        request_url = self.__base_url + \
+            mpesa_end_points.query_lipanampesa_online_payment.value
         response = await self.call_api(request_url)
         return response
 
     async def b2c_payment_request(self):
         funcName = "MpesaApiWrapper.b2c_payment_request"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.b2c_payment_request.value
+        request_url = self.__base_url + mpesa_end_points.b2c_payment_request.value
         response = await self.call_api(request_url)
         return response
 
@@ -78,14 +80,14 @@ class MpesaApiWrapper:
         funcName = "MpesaApiWrapper.initiate_lipanampesa_online_payment"
         print(f'\n Called MPESA API...{funcName} \n')
         request_url = self.__base_url + \
-            MpesaEndPoints.initiate_lipanampesa_online_payment.value
+            mpesa_end_points.initiate_lipanampesa_online_payment.value
         response = await self.call_api(request_url)
         return response
 
     async def account_balance_query(self):
         funcName = "MpesaApiWrapper.account_balance_query"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.account_balance_query.value
+        request_url = self.__base_url + mpesa_end_points.account_balance_query.value
         response = await self.call_api(request_url)
         return response
 
@@ -93,6 +95,6 @@ class MpesaApiWrapper:
     async def register_c2b_confirmation_urls(self):
         funcName = "MpesaApiWrapper.register_c2b_confirmation_urls"
         print(f'\n Called MPESA API...{funcName} \n')
-        request_url = self.__base_url + MpesaEndPoints.register_c2b_confirmation_urls.value
+        request_url = self.__base_url + mpesa_end_points.register_c2b_confirmation_urls.value
         response = await self.call_api(request_url)
         return response

@@ -1,7 +1,6 @@
-
 import asyncio
-from MpesaApiWrapper import MpesaApiWrapper
-#from ..Tools.tools import read_environment_variable
+# import MpesaApiWrapper from Routes
+from Routes import MpesaApiWrapper
 
 
 async def other_task():
@@ -12,10 +11,10 @@ async def other_task():
 
 
 async def main():
-    mpesa_wrapper = MpesaApiWrapper()
+    api_wrapper = MpesaApiWrapper()
 
     access_token_response = asyncio.create_task(
-        mpesa_wrapper.get_access_token())
+        api_wrapper.get_access_token())
 
     other_task_response = asyncio.create_task(other_task())
 
