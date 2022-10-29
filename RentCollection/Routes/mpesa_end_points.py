@@ -1,8 +1,7 @@
 from enum import Enum
 
 
-class mpesa_end_points(Enum):
-    base_url = "https://sandbox.safaricom.co.ke"
+class mpesa_api_end_points(Enum):
     get_access_token = "/oauth/v1/generate?grant_type=client_credentials"
     b2b_payment_request = "/mpesa/b2b/v1/paymentrequest"
     reverse_transaction = "/mpesa/reversal/v1/request"
