@@ -1,13 +1,13 @@
 from pydantic import BaseSettings, HttpUrl
 
-from Models.mpesa_dtos import default_action
+#from Models.mpesa_dtos import default_action
 
 
 class Settings(BaseSettings):
     base_url: str
     authorization_key: str
     short_code: str
-    response_type: default_action
+    response_type: str
     confirmation_url: HttpUrl
     validation_url: HttpUrl
 

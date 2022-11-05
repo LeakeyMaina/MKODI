@@ -10,7 +10,7 @@ class MpesaApiWrapper:
     def __init__(self, base_url=settings.base_url, headers={
             'Authorization': f'Basic {settings.authorization_key}'}):
         funcName = "MpesaApiWrapper.__init__"
-        print(f'\n Called MPESA API...{funcName} \n')
+        print(f'\n {funcName}')
         self.__base_url = base_url
         self.__request_headers = headers
 
