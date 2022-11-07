@@ -22,5 +22,4 @@ This module maintains a landlord's financial and accounting records for their pr
     Rental Tax Transmitter
 
 4. Tenancy Ratings module
-The system queries a tenant's rental payments and tenancy records and issues tenant and landlord and property ratings and recommendations. it enables landlords to vet potential tenants via their tenant ratings.
-The system maintains a tenant's rental payments and tenancy history and enables landlords to vet potential tenants via their tenancy credit score.
+The system maintains and queries a tenant's rental payments and tenancy records . Based on these records, the system is able to issue tenancy ratings and recommendations. This enables landlords to vet potential tenants via their tenancy credit score.
