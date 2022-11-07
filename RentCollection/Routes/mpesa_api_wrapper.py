@@ -2,8 +2,8 @@
 import requests
 import asyncio
 
-from Config.config import settings
-from Routes.mpesa_end_points import mpesa_api_end_points
+from Config import settings
+from Routes import mpesa_api_end_points
 
 
 class MpesaApiWrapper:

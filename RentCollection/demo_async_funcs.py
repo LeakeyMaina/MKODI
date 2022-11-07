@@ -21,13 +21,13 @@ def test_config_env_file():
     print(f"validation_url = {settings.validation_url}")
 
 
-async def test_mpesa_wrapper():
-    api_wrapper = MpesaApiWrapper()
-    return await api_wrapper.get_access_token()
+async def get_mpesa_access_token():
+    mpesa_api_wrapper = MpesaApiWrapper()
+    return await mpesa_api_wrapper.get_access_token()
 
 
 async def demo_async_funcs():
-    access_token_response = asyncio.create_task(test_mpesa_wrapper())
+    access_token_response = asyncio.create_task(get_mpesa_access_token())
     other_task_response = asyncio.create_task(other_task())
 
     print(f"\n<----RECEIVED MPESA API RESPONSE... {await access_token_response}\n")
