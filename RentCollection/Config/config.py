@@ -1,8 +1,5 @@
 from pydantic import BaseSettings, HttpUrl
 
-#from Models.mpesa_dtos import default_action
-
-
 class Settings(BaseSettings):
     base_url: str
     authorization_key: str
