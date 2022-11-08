@@ -1,5 +1,5 @@
 [![Continous Integration](https://github.com/LeakeyMaina/MKODI/actions/workflows/CI.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/CI.yml)
-[![CodeQL](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml)
+[![Code Review](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml)
 
 # MKODI
 
