@@ -1,4 +1,5 @@
 [![Continous Integration](https://github.com/LeakeyMaina/MKODI/actions/workflows/CI.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/CI.yml)
+[![CodeQL](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml)
 # MKODI
 
 MKODI is a cloud based rental property management system that enables Landlords to manage their rental properties, receive digital rental payments from their tenants and comply with the Kenya Revenue Authority Monthly Rental Income Tax remitance requirements.
