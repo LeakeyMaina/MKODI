@@ -1,4 +1,6 @@
-[![Python application](https://github.com/LeakeyMaina/MKODI/actions/workflows/python-app.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/python-app.yml)
+[![Continous Integration](https://github.com/LeakeyMaina/MKODI/actions/workflows/CI.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/CI.yml)
+[![Code Review](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml/badge.svg)](https://github.com/LeakeyMaina/MKODI/actions/workflows/codeql.yml)
+
 # MKODI
 
 MKODI is a cloud based rental property management system that enables Landlords to manage their rental properties, receive digital rental payments from their tenants and comply with the Kenya Revenue Authority Monthly Rental Income Tax remitance requirements.
@@ -12,7 +14,7 @@ This module is used to register and manage new landlords and their respective pr
     Tenant Records
 
 2. Rent collection management Module
-This module integrates with  MPESA <https://developer.safaricom.co.ke/> and enables the landlord to receive mpesa rental payments from their tenants. It maintains a tenant's rental payment records and automates overdue payment reminders as well as receipts for payments received.
+This module integrates with  MPESA API'S <https://developer.safaricom.co.ke/> to enable landlord's to receive mpesa rental payments from their tenants. It maintains a tenant's rental payment records and automates overdue payment reminders as well as receipts for payments received.
     Rental Payments Records
 
 3. Rental Income Tax management module
