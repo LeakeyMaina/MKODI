@@ -1,3 +1,8 @@
+# Azure App Service is a PaaS service able to run Docker containers, that suits best for this scenario. 
+# Azure Container Registry holds the Docker images ready to be pulled from the App Service. 
+# An Azure KeyVault instance can store application secrets such as connection strings.
+# Database server—Azure Database for Postgresql 
+# Service Bus to allow asynchronous communication between the services.
 terraform {
   required_providers {
     azurerm = {
